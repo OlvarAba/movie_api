@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Documentation</title>
+</head>
+
+<body>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th>Description</th>
+      <th>URL</th>
+      <th>Request</th>
+      <th>Response</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Allow Users to register.</td>
+        <td>/users</td>
+        <td>POST</td>
+        <td>NONE</td>
+      </tr>
+      <tr>
+        <td>Allow Users to add movies to their favorites.</td>
+        <td>/users/:id/:movieTitle</td>
+        <td>POST</td>
+        <td>A message stating movie has been added to favorites.</td>
+      </tr>
+      <tr>
+        <td>Return a List of movies.</td>
+        <td>/movies</td>
+        <td>GET</td>
+        <td>A JSON object with all the movies.</td>
+      </tr>
+      <tr>
+        <td>Return data about a single movie.</td>
+        <td>/movies/:title</td>
+        <td>GET</td>
+        <td>A JSON object with a single movie.</td>
+      </tr>
+      <tr>
+        <td>Return data about a movie by genre.</td>
+        <td>/movies/genre/:genreName</td>
+        <td>GET</td>
+        <td>A JSON object about a movies genre.</td>
+      </tr>
+      <tr>
+        <td>Return data about a movies director.</td>
+        <td>/movies/director/:directorName</td>
+        <td>GET</td>
+        <td>A JSON object about the movies director.</td>
+      </tr>
+      <tr>
+        <td>Allow users to update their user info.</td>
+        <td>/users/:id</td>
+        <td>PUT</td>
+        <td>A JSON object with updated user info.</td>
+      </tr>
+      <tr>
+        <td>Allow Users to remove a movie from their favorite list.</td>
+        <td>/users/:id/:movieTitle</td>
+        <td>DELETE</td>
+        <td>A Message stating movie has been removed from favorites.</td>
+      </tr>
+      <tr>
+        <td>Allow Users to unregister.</td>
+        <td>/users/:id</td>
+        <td>DELETE</td>
+        <td>A message stating user has been removed.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
