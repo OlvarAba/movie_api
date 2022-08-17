@@ -38,7 +38,7 @@ const Users = Models.User;
 
 
 
- mongoose.connect('mongodb+srv://myFlixAdmin:TRU6ABryu@myflixdb.4wqhakq.mongodb.net/?retryWrites=true', {useNewUrlParser: true, useUnifiedTopology: true}); // this was the only way i could get it to work in postman and not get a mongo error 
+ mongoose.connect('mongodb+srv://myFlixAdmin:TRU6ABryu@myflixdb.p7vz0lg.mongodb.net/myFlix?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true}); 
 
 // Get all users
 
