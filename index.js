@@ -10,7 +10,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("common"));
 const { check, validationResult } = require('express-validator');
 const cors = require('cors');
-let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
+let allowedOrigins = [
+  "http://localhost:8080",
+  "http://localhost:1234",
+  "https://olvaraba.github.io"
+];
 
 app.use(cors({
   origin: (origin, callback) => {
